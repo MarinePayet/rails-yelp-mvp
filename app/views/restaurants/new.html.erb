@@ -1,0 +1,9 @@
+
+<h1>TEST</h1>
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category, collection: Restaurant::CATEGORY, prompt: "Select one" %>
+  <%= f.input :phone_number %>
+  <%= f.submit "Save", class: "btn btn-primary" %>
+<% end %>
